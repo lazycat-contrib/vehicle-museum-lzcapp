@@ -1,0 +1,9 @@
+application:
+  subdomain: vehicle-museum
+  public_path:
+    - /
+  upstreams:
+    - location: /
+      backend: file:///lzcapp/pkg/content/
+
+usage: 打开应用后选择车辆，即可拖动旋转、缩放观察 3D 模型，并播放中文童声介绍。

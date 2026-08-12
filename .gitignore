@@ -1,0 +1,3 @@
+.lazycat-build/
+dist/
+*.lpk
