@@ -30,4 +30,6 @@ lzc-cli lpk info .lazycat-build/vehicle-museum.lpk
 ```
 
 上游当前未提交依赖锁文件，因此构建使用 `npm install`，解析到的是构建时满足
-`package.json` 版本范围的依赖。上游代码与资源保留其原始许可和署名。
+`package.json` 版本范围的依赖。本仓库根目录的 `package-lock.json` 仅用于 GitHub
+Actions 的 npm 缓存键，不会替代构建时拉取的上游 `package.json`。上游代码与资源
+保留其原始许可和署名。
